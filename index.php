@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> ololo </title>
-</head>
-<body>
-	<center>
-		<table>
-				<tr>
-					<td>
-						email
-					</td>
-					<td>
-						<input type="text" name="">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						nickname
-					</td>
-					<td>
-						<input type="text" name="">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						password
-					</td>
-					<td>
-						<input type="text" name="">
-					</td>
-				</tr>
-		</table>
-	</center>
-	<form action="Scripts/PHP/sayHello.php" method="POST">
-		write your name fucking pidor
-		<input type="text" name="Name" id = "pidor">
-		<input type="" name="">
-	</form>
-
-</body>
+    <head><meta charset="utf-8">
+    <title>Авторизация</title>
+	<link href="style.css" rel="stylesheet"
+	</head>
+    <body>
+        <form class="login" method="post" action="">
+            <label for="login">Логин</label>
+            <input type="text" id="login" name="login" class="field" pattern="^[a-zA-Z]+$-@-^[a-zA-Z]+$-.-^[a-zA-Z]+$">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" class="field" >
+            <input type="submit" value="Войти" class="button">
+        </form>
+    </body>
 </html>
